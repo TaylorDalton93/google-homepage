@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                width: 100%;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid #e7e7e7;
+                background-color: #f3f3f3;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: #666;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #ddd;
+            }
+
+            li a.active {
+                color: white;
+                background-color: gray;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: white;
+                color: gray;
+            }
+
+            input {
+                width: 75%;
+            }
+
+            input[type=button] {
+                background-color: lightgrey;
+                border: none;
+                color: gray;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href="#about">About</a></li>
+            <li><a href="#store">Store</a></li>
+            <li><a href="#mail">Mail</a></li>
+            <li><a href="#images">Images</a></li>
+        </ul>
+
+        <img src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="Google logo" width="500" height="600">
+
+        <div class="footer">
+            <ul>
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#terms">Terms</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </div>
+
+        <form>
+            <input type="text" id="search">
+        </form>
+
+        <input type="button" value="Google Search">
+    </body>
+</html>
